@@ -1,0 +1,148 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background: no-repeat url(images/pattern-background-mobile.svg);
+  background-size: 100%;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: hsl(224, 23%, 55%);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 450px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.headerpic {
+  width: 100%;
+}
+
+h1 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 18px;
+}
+
+.saletext {
+  width: 84%;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  background-color: hsl(225, 100%, 98%);
+  margin: 30px 0;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.middle {
+  flex-basis: 35%;
+  text-align: left;
+}
+
+.plan {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  display: block;
+}
+
+.change {
+  font-size: 14px;
+  font-weight: 700;
+  flex-basis: 30%;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.change:hover {
+  color: hsl(268, 28%, 43%);
+  text-decoration: none;
+}
+
+button {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  color: hsl(224, 23%, 55%);
+  background: none;
+}
+
+button:hover {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
+
+.payment {
+  background-color: hsl(245, 75%, 52%);
+  padding: 15px 50px;
+  margin-bottom: 20px;
+  width: 90%;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 16px 10px hsl(225, 100%, 94%);
+}
+
+.payment:hover {
+  background-color: hsl(268, 28%, 43%);
+  cursor: pointer;
+  color: white;
+}
+
+.cancel {
+  margin-bottom: 30px;
+}
+
+.attribution {
+  display: none;
+}
+
+@media (min-width: 489px) {
+  body {
+    background: no-repeat url(images/pattern-background-desktop.svg);
+    background-size: 100%;
+    background-color: hsl(225, 100%, 94%);
+  }
+
+  .saletext {
+    width: 67%;
+  }
+
+  .price {
+    width: 70%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .payment {
+    width: 77%;
+  }
+  .cancel {
+    margin-bottom: 40px;
+  }
+}
